@@ -11,8 +11,9 @@ class CodersArray {
     this[this.lenght] = input;
     this.length++;
     return this.length;
-    
-  some(input) {
+  }
+
+  /*   Some(input) {
     for (const key in this) {
       if (this[key] === input) {
         return true;
@@ -20,6 +21,6 @@ class CodersArray {
     }
 
     return false;
-  }
+  } */
 }
 export default CodersArray;
