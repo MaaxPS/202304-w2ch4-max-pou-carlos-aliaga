@@ -1,18 +1,27 @@
-
 class CodersArray {
-  length=0;
+  length = 0;
 
   constructor(...inputs) {
-    for(let index of inputs){
-      this[this.length]=inputs[this.length]
-      this.length++
+    for (const index of inputs) {
+      this[this.length] = inputs[this.length];
+      this.length++;
     }
   }
 
-  push(){
-    return 
+  push(input) {
+    this[this.length] = input;
+    this.length++;
+  }
+
+  some(input) {
+    for (const key in this) {
+      if (this[key] === input) {
+        return true;
+      }
+    }
+
+    return false;
   }
 }
-
 
 export default CodersArray;
