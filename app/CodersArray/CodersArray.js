@@ -11,6 +11,15 @@ class CodersArray {
     this[this.lenght] = input;
     this.length++;
     return this.length;
+    
+  some(input) {
+    for (const key in this) {
+      if (this[key] === input) {
+        return true;
+      }
+    }
+
+    return false;
   }
 }
 export default CodersArray;
