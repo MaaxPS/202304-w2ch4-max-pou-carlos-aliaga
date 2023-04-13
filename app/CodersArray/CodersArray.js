@@ -1,13 +1,17 @@
 class CodersArray {
   length = 0;
-
   constructor(...inputs) {
-    for (let index of inputs) {
-      this[this.length] = inputs[this.length];
+    for (const index of inputs) {
+      this[this.length] = index;
       this.length++;
     }
   }
 
+  push(input) {
+    this[this.lenght] = input;
+    this.length++;
+    return this.length;
+    
   some(input) {
     for (const key in this) {
       if (this[key] === input) {
@@ -18,8 +22,4 @@ class CodersArray {
     return false;
   }
 }
-
 export default CodersArray;
-const aver = new CodersArray(2, 3, 4, 5);
-console.log(aver);
-console.log(aver.push(4));
