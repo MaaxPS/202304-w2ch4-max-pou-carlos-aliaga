@@ -1,12 +1,16 @@
-import isLength from "../length/length.js";
 
 class CodersArray {
-  inputs;
-  length;
+  length=0;
 
   constructor(...inputs) {
-    this.inputs = inputs;
-    this.length=isLength(...inputs)
+    for(let index of inputs){
+      this[this.length]=inputs[this.length]
+      this.length++
+    }
+  }
+
+  push(){
+    return 
   }
 }
 
