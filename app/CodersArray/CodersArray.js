@@ -8,11 +8,6 @@ class CodersArray {
     }
   }
 
-  push(input) {
-    this[this.length] = input;
-    this.length++;
-  }
-
   some(input) {
     for (const key in this) {
       if (this[key] === input) {
