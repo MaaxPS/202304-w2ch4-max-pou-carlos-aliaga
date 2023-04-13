@@ -2,7 +2,7 @@ class CodersArray {
   length = 0;
 
   constructor(...inputs) {
-    for (const index of inputs) {
+    for (let index of inputs) {
       this[this.length] = inputs[this.length];
       this.length++;
     }
@@ -25,3 +25,6 @@ class CodersArray {
 }
 
 export default CodersArray;
+const aver = new CodersArray(2, 3, 4, 5);
+console.log(aver);
+console.log(aver.push(4));
